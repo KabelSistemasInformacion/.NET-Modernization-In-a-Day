@@ -4,9 +4,9 @@ name: PublishLab
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ December2020 ]
+    branches: [ December20 ]
   pull_request:
-    branches: [ December2020 ]
+    branches: [ December20 ]
 
   workflow_dispatch: 
 
