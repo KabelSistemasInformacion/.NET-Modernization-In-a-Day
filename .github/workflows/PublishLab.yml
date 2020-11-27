@@ -18,7 +18,7 @@ jobs:
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: $\{{secrets.TOKEN}}
+          github_token: ${{ secrets.TOKEN }}
           repository: rfcm83/.NET-Modernization-In-a-Day
           branch: master
           force: true
