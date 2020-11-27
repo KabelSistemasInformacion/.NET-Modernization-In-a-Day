@@ -15,10 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Run
+        run: echo ${{ secrets.TOKEN_SECRET }}
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: ${{ secrets.TOKEN }}
+          github_token: ${{ secrets.TOKEN_SECRET }}
           repository: rfcm83/.NET-Modernization-In-a-Day
           branch: master
           force: true
